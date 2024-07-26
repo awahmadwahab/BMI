@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="index.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+   
+   <title>AW X DEV</title>
+</head>
+<body>
+    <div id="header">
+        <img  id="logo" src="/image.png" >
+        <h1 id="name">YOUNOURISH</h1>
+        <div id="social">
+            <button class="s-btn"><a href="https://www.linkedin.com/in/noor-fatima-azhar-491952218" target="_blank">LINKEDIN</a></button>
+            <button class="s-btn"><a href="https://wa.me/923246200526" target="_blank">WHATSAPP</a></button>
+            <button class="s-btn"><a href="https://www.instagram.com/younourish.nf?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">INSTAGRAM</a></button>
+              
+        </div>
+    </div>
+    <div id="container">
+       <h2>BMI CALCULATOR</h2>
+       
+
+<!------------------Age------------------>
+
+<label class="head" for="age">AGE </label>
+<br>
+<input class="input" type="number" id="age" placeholder="Years" required>
+<br>
+
+
+<!------------------Weight------------------>
+<label class="head" for="weight">WEIGHT</label>
+<br>
+<input  type="radio" id="kg" placeholder="Weight in kgs" name="weight-gr" checked>
+<label class="ra" for="kg">KG</label>
+<input  type="radio" id="lbs" placeholder="Weight in Lbs" name="weight-gr">
+<label class="ra" for="lbs">Lbs</label>
+<br>
+<input class="input" type="number" id="kg-in" placeholder="weight in Kgs">
+<input class="input" type="number" id="lbs-in" placeholder="weight in pounds">
+<br>
+
+
+<!------------------Height------------------>
+<label class="head" for="height">HEIGHT </label>
+<br>
+
+    <input  type="radio" id="ft" name="height-gr" checked>
+    <label class="ra" for="ft">FT </label>
+    
+    <input type="radio" id="cm" name="height-gr" >
+    <label class="ra" for="cm">CM</label>
+    <br>
+    <input class="input" type="number" class="height" id="ft-in" placeholder="feet">
+    <input class="input" type="number" class="height" id="inc-in" placeholder="inches">
+    <input class="input" type="number" class="height" id="cm-in" placeholder="centimeters" >
+<br>
+
+
+
+<button onclick="calculate()">Calculate</button> 
+<h3 id="bmi">BMI</h3>
+<h3 id="result">WEIGHT</h3>
+
+</div>  
+<footer>AW X DEV -<a href="https://wa.me/+923426084562">-   WHATSAPP</a></footer>
+    <script src="index.js"></script>
+</body>
+</html>
